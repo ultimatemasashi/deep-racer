@@ -80,7 +80,7 @@ def reward_function(params):
        if speed < SPEED_THRESHOLD:
          reward *= 1.0
     ABS_STEERING_THRESHOLD = -15.0
-    if abs_steering > ABS_STEERING_THRESHOLD:
+    if abs_steering < ABS_STEERING_THRESHOLD:
        if speed < SPEED_THRESHOLD:
          reward *= 1.0
 
